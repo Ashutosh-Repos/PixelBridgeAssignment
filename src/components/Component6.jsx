@@ -62,10 +62,10 @@ function Component6() {
       >
         Merchandise
       </h1>
-      <div className="w-full h-[35rem] max-sm:h-[20rem] max-sm:w-full max-[380px]:h-[18rem] mt-20 max-sm:mt-10 relative flex items-center justify-center max-sm:px-4 max-sm:py-1  px-8 py-4 z-[2]">
+      <div className="w-full h-[35rem] max-sm:h-[20rem] max-sm:w-full max-[380px]:h-[18rem] mt-20 max-sm:mt-10 relative flex items-center justify-center max-sm:px-4 max-sm:py-1  px-8 py-4 z-10">
         <img
           src={arrow2}
-          className=" absolute max-2xl:left-40 max-xl:left-30 max-lg:left-16 max-sm:left-8 w-14 drop-shadow-[2px_4px_5px_rgba(0,0,0,0.4)] max-sm:w-8"
+          className=" absolute max-2xl:left-40 max-xl:left-30 max-lg:left-16 max-sm:left-8 w-14 drop-shadow-[2px_4px_5px_rgba(0,0,0,0.4)] max-sm:w-8 z-10"
           onClick={() => {
             if (index > 0) {
               setIndex(index - 1);
@@ -123,7 +123,7 @@ function Component6() {
 
         <img
           src={arrow2}
-          className=" absolute max-2xl:right-40 max-xl:right-30 max-lg:right-16 max-sm:right-8 w-14 rotate-[180deg] drop-shadow-[-2px_-4px_5px_rgba(0,0,0,0.4)] max-sm:w-8"
+          className=" absolute max-2xl:right-40 max-xl:right-30 max-lg:right-16 max-sm:right-8 w-14 rotate-[180deg] drop-shadow-[-2px_-4px_5px_rgba(0,0,0,0.4)] max-sm:w-8 z-10"
           onClick={() => {
             if (index < 3) {
               setIndex(index + 1);
