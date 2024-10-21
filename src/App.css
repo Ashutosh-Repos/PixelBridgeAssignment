@@ -1,0 +1,75 @@
+#dog1::before{
+    content: '';
+    position: absolute;
+    top: 65%;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/dog1m.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent, transparent);
+    filter: blur(2px);
+    z-index: 1;
+}
+#dog2::before{
+    content: '';
+    position: absolute;
+    top: 80%;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/dog2m.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent, transparent,transparent);
+    filter: blur(2px);
+    z-index: 1;
+}
+#dog3::before{
+    content: '';
+    position: absolute;
+    top: 91%;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/dog3m.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent, transparent,transparent);
+    filter: blur(0.5px);
+    z-index: 1;
+}
+
+#dog4::before{
+    content: '';
+    position: absolute;
+    top: 75%;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/dog4m.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent, transparent);
+    filter: blur(0.5px);
+    z-index: 2;
+}
+#dog5::before{
+    content: '';
+    position: absolute;
+    top: 60%;
+    height: 100%;
+    width: 90%;
+    background-image: url("./assets/images/dog5m.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6),transparent,transparent,transparent);
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.maskIm{
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+}

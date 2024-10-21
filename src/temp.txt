@@ -1,0 +1,97 @@
+bg-gradient-to-b from-homelgreen to-homedgreen"
+
+style={{ WebkitTextStroke: "0.4rem black" }}
+
+
+
+
+          {/* <ul className="w-full h-20 bg-homedgreen flex items-center justify-center list-none gap-2 text-sm">
+          <li>ALL</li>
+          <li>Photos</li>
+          <li>VIDEOS</li>
+        </ul> */}
+
+        
+<div className="w-full h-full max-[920px]:h-[25rem] z-[1] py-8 px-8  flex flex-col items-enter justify-center gap-[1rem] relative min-[920px]:hidden z-[0] ">
+        <h1 className="text-left text-3xl max-xl:text-2xl max-lg:text-xl text-black font-['Kumbh Sans'] font-semibold">
+          Our journey is just beginning. Explore our roadmap to see the exciting
+          milestones and future plans we have in store.
+        </h1>
+        <h1 className="text-left text-3xl max-xl:text-2xl max-lg:text-xl text-white font-['Kumbh Sans'] font-semibold">
+          Join us as we grow and achieve new heights.
+        </h1>
+      </div>
+style={{ left: "100%", transform: "translateX(-50%)" }}
+onClick={() => {
+                handle(true, 1);
+              }}
+
+
+
+
+
+
+
+
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const delay = 2500;
+
+function Slideshow() {
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+  return (
+    <div className="slideshow">
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {colors.map((backgroundColor, index) => (
+          <div
+            className="slide"
+            key={index}
+            style={{ backgroundColor }}
+          ></div>
+        ))}
+      </div>
+
+      <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+
+
+style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
