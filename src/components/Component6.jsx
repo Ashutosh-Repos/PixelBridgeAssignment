@@ -49,7 +49,7 @@ function Component6() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === gmr.length - 1 ? 0 : prevIndex + 1
+          prevIndex === merchdata.length - 1 ? 0 : prevIndex + 1
         ),
       3000
     );
